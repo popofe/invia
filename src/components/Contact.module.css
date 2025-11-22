@@ -1,0 +1,86 @@
+.contact {
+    background: linear-gradient(to right, var(--secondary), #1e1b4b);
+    color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #e2e8f0;
+}
+
+.benefits li {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--foreground);
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.submit {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.legal {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
